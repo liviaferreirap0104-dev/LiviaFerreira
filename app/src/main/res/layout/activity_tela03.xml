@@ -16,12 +16,75 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView3"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="34sp" />
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="TextView"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="Jogos : 1"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#440CA6"
+                    android:text="Jogar de novo"
+                    android:textColorLink="#440CA6"
+                    android:textSize="20sp"
+                    app:iconTint="#9C27B0"
+                    app:rippleColor="#E43A3A" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#440CA6"
+                    android:text="Fim"
+                    android:textSize="20sp"
+                    app:iconTint="#440CA6"
+                    app:rippleColor="#AD1818"
+                    app:strokeColor="#E91E63" />
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -81,20 +144,21 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/ImageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:tint="#F04D85"
+            app:srcCompat="@drawable/ic_action_name_5" />
+
+        <ImageView
             android:id="@+id/imageView7"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
-            android:tint="#FFEB3B"
+            android:tint="#F04D85"
             app:srcCompat="@drawable/ic_action_name_5" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
-            android:tint="#FFEB3B"
-            app:srcCompat="@drawable/ic_action_name_5" />
     </LinearLayout>
 
     <LinearLayout
@@ -104,6 +168,14 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:tint="#00BCD4"
+            app:srcCompat="@drawable/ic_action_name_4" />
+
+        <ImageView
             android:id="@+id/imageView9"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -111,13 +183,6 @@
             android:tint="#5C00FF"
             app:srcCompat="@drawable/ic_action_name_2" />
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
-            android:tint="#00BCD4"
-            app:srcCompat="@drawable/ic_action_name_4" />
     </LinearLayout>
 
 </LinearLayout>
